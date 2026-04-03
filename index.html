@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Wellness of Charlotte | Charlotte's Premium Dental Care | (704) 317-7337</title>
+    <meta name="description" content="Dental Wellness of Charlotte provides premium dental care including implants, Invisalign, cosmetic dentistry & more. 5.0 stars, 380+ reviews. Call (704) 317-7337.">
+    <meta name="keywords" content="dentist Charlotte NC, dental implants Charlotte, Invisalign Charlotte, cosmetic dentistry Charlotte, Dental Wellness of Charlotte, Dr. Shirman">
+    <meta property="og:title" content="Dental Wellness of Charlotte | Charlotte's Premium Dental Care">
+    <meta property="og:description" content="Premium dental care in Charlotte, NC. General, cosmetic, implants, Invisalign & more. 5.0 stars from 380+ reviews. Dr. Sergei Shirman, DDS.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dental-wellness-charlotte.vercel.app">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://dental-wellness-charlotte.vercel.app">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Dental Wellness of Charlotte",
+      "url": "https://dental-wellness-charlotte.vercel.app",
+      "telephone": "+17043177337",
+      "description": "Charlotte's Premium Dental Care — General, Cosmetic, Implants, Invisalign & more.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "9915 Sandy Rock Pl, Suite 200",
+        "addressLocality": "Charlotte",
+        "addressRegion": "NC",
+        "postalCode": "28277",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 35.0540,
+        "longitude": -80.8450
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"],
+          "opens": "08:00",
+          "closes": "16:30"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Friday"],
+          "opens": "08:00",
+          "closes": "13:30"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "380"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Dr. Sergei Shirman"
+      },
+      "foundingDate": "2010",
+      "areaServed": "Charlotte, NC"
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <style>
+        /* ===== RESET & BASE ===== */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --teal-deep: #0D4A52;
+            --teal-mid: #0E5A63;
+            --teal-light: #10707C;
+            --accent: #14B8A6;
+            --accent-glow: rgba(20, 184, 166, 0.25);
+            --cream: #FAF7F2;
+            --off-white: #F5F2EE;
+            --white: #FFFFFF;
+            --gold: #D4A853;
+            --charcoal: #1C2B2D;
+            --gray-400: #94A3B8;
+            --gray-200: #E2E8F0;
+            --border: rgba(13, 74, 82, 0.1);
+            --shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 12px 48px rgba(0, 0, 0, 0.12);
+            --radius: 12px;
+            --radius-lg: 20px;
+            --transition: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--white);
+            color: var(--charcoal);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 700;
+            line-height: 1.15;
+        }
+
+        .display-italic {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-weight: 400;
+        }
+
+        a { color: inherit; text-decoration: none; }
+        img { max-width: 100%; height: auto; display: block; }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ===== HEADER / NAV ===== */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            border-bottom: 1px solid var(--border);
+            transition: var(--transition);
+        }
+
+        .header.scrolled {
+            background: rgba(255, 255, 255, 0.97);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 72px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-icon {
+            width: 38px;
+            height: 38px;
+            background: var(--teal-deep);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-icon svg { width: 22px; height: 22px; }
+
+        .logo-text {
+            font-weight: 700;
+            font-size: 17px;
+            color: var(--charcoal);
+            letter-spacing: -0.01em;
+        }
+
+        .logo-text span { color: var(--teal-deep); }
+
+        .header-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--teal-deep);
+            color: var(--white);
+            padding: 10px 24px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all var(--transition);
+            border: none;
+            cursor: pointer;
+        }
+
+        .header-cta:hover {
+            background: var(--teal-mid);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 20px var(--accent-glow);
+        }
+
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--charcoal);
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        .mobile-toggle span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: var(--charcoal);
+            margin: 6px 0;
+            transition: var(--transition);
+            border-radius: 2px;
+        }
+
+        /* ===== MOBILE MENU ===== */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 72px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(20px);
+            z-index: 999;
+            padding: 40px 24px;
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: all 0.4s ease;
+        }
+
+        .mobile-menu.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .mobile-menu a {
+            display: block;
+            font-weight: 600;
+            font-size: 24px;
+            padding: 16px 0;
+            border-bottom: 1px solid var(--gray-200);
+            color: var(--charcoal);
+            transition: color var(--transition);
+        }
+
+        .mobile-menu a:hover { color: var(--accent); }
+
+        .mobile-menu-cta {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: var(--teal-deep);
+            color: var(--white);
+            padding: 16px;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 32px;
+            text-align: center;
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 120px 0 80px;
+            overflow: hidden;
+            background: var(--cream);
+        }
+
+        .hero-grid {
+            position: relative;
+            z-index: 10;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-content { position: relative; z-index: 10; }
+
+        .hero-accent-line {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: clamp(20px, 2.5vw, 26px);
+            color: var(--accent);
+            margin-bottom: 12px;
+            font-weight: 400;
+        }
+
+        .hero h1 {
+            font-size: clamp(40px, 5vw, 62px);
+            color: var(--charcoal);
+            margin-bottom: 20px;
+            letter-spacing: -0.02em;
+            line-height: 1.08;
+        }
+
+        .hero h1 .teal { color: var(--teal-deep); }
+
+        .hero-subtitle {
+            font-size: 17px;
+            color: var(--gray-400);
+            max-width: 480px;
+            margin-bottom: 36px;
+            line-height: 1.7;
+        }
+
+        .hero-ctas {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-bottom: 48px;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--teal-deep);
+            color: var(--white);
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 15px;
+            transition: all var(--transition);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            background: var(--teal-mid);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px var(--accent-glow);
+        }
+
+        .btn-outline {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: transparent;
+            color: var(--teal-deep);
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 15px;
+            border: 2px solid var(--teal-deep);
+            transition: all var(--transition);
+            cursor: pointer;
+        }
+
+        .btn-outline:hover {
+            background: var(--teal-deep);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        .hero-trust {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            flex-wrap: wrap;
+        }
+
+        .hero-trust-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .hero-trust-item .value {
+            font-weight: 800;
+            font-size: 18px;
+            color: var(--charcoal);
+        }
+
+        .hero-trust-item .label {
+            font-size: 13px;
+            color: var(--gray-400);
+            font-weight: 500;
+        }
+
+        .hero-trust-stars {
+            display: flex;
+            gap: 2px;
+        }
+
+        .hero-trust-stars svg {
+            width: 16px;
+            height: 16px;
+            fill: var(--gold);
+        }
+
+        .hero-visual {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-shape {
+            width: 100%;
+            max-width: 480px;
+            aspect-ratio: 1;
+            background: linear-gradient(135deg, var(--teal-deep) 0%, var(--teal-mid) 50%, var(--accent) 100%);
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-shape::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 30% 40%, rgba(255,255,255,0.08) 0%, transparent 60%);
+        }
+
+        .hero-shape-icon {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-shape-icon svg {
+            width: 120px;
+            height: 120px;
+            opacity: 0.2;
+            fill: var(--white);
+        }
+
+        .hero-float-badge {
+            position: absolute;
+            background: var(--white);
+            border-radius: 16px;
+            padding: 16px 20px;
+            box-shadow: var(--shadow-lg);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            animation: floatBadge 4s ease-in-out infinite;
+        }
+
+        .hero-float-badge.top-right {
+            top: 30px;
+            right: -20px;
+        }
+
+        .hero-float-badge.bottom-left {
+            bottom: 40px;
+            left: -20px;
+            animation-delay: -2s;
+        }
+
+        .hero-float-badge .badge-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .hero-float-badge .badge-icon.teal { background: rgba(20, 184, 166, 0.12); }
+        .hero-float-badge .badge-icon.gold { background: rgba(212, 168, 83, 0.12); }
+
+        .hero-float-badge .badge-text .num {
+            font-weight: 800;
+            font-size: 18px;
+            color: var(--charcoal);
+            display: block;
+            line-height: 1.2;
+        }
+
+        .hero-float-badge .badge-text .lbl {
+            font-size: 12px;
+            color: var(--gray-400);
+            font-weight: 500;
+        }
+
+        @keyframes floatBadge {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* ===== SECTION SHARED ===== */
+        .section { padding: 100px 0; }
+        .section-cream { background: var(--cream); }
+        .section-white { background: var(--white); }
+        .section-teal { background: var(--teal-deep); }
+        .section-charcoal { background: var(--charcoal); }
+
+        .section-header {
+            text-align: center;
+            max-width: 640px;
+            margin: 0 auto 60px;
+        }
+
+        .section-header .overline {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: 18px;
+            color: var(--accent);
+            margin-bottom: 8px;
+        }
+
+        .section-header h2 {
+            font-size: clamp(30px, 4vw, 44px);
+            color: var(--charcoal);
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .section-header p {
+            font-size: 16px;
+            color: var(--gray-400);
+            line-height: 1.7;
+        }
+
+        .section-header.light h2 { color: var(--white); }
+        .section-header.light p { color: rgba(255,255,255,0.7); }
+
+        /* ===== SERVICES ===== */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .service-card {
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            border-radius: var(--radius-lg);
+            padding: 36px 28px;
+            transition: all var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--teal-deep), var(--accent));
+            opacity: 0;
+            transition: opacity var(--transition);
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: transparent;
+        }
+
+        .service-card:hover::before { opacity: 1; }
+
+        .service-icon {
+            width: 52px;
+            height: 52px;
+            background: rgba(20, 184, 166, 0.1);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .service-icon svg {
+            width: 26px;
+            height: 26px;
+            stroke: var(--teal-deep);
+            fill: none;
+            stroke-width: 1.8;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .service-card h3 {
+            font-size: 19px;
+            margin-bottom: 10px;
+            color: var(--charcoal);
+        }
+
+        .service-card p {
+            font-size: 14px;
+            color: var(--gray-400);
+            line-height: 1.65;
+        }
+
+        /* ===== ABOUT ===== */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-photo {
+            width: 100%;
+            aspect-ratio: 4/5;
+            background: linear-gradient(135deg, var(--teal-deep), var(--teal-mid));
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-photo::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.06) 0%, transparent 60%);
+        }
+
+        .about-initials {
+            font-size: 80px;
+            font-weight: 800;
+            color: rgba(255, 255, 255, 0.12);
+            letter-spacing: 0.05em;
+            position: relative;
+            z-index: 2;
+        }
+
+        .about-content .overline {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: 18px;
+            color: var(--accent);
+            margin-bottom: 8px;
+        }
+
+        .about-content h2 {
+            font-size: clamp(28px, 3.5vw, 40px);
+            margin-bottom: 20px;
+            letter-spacing: -0.02em;
+        }
+
+        .about-content p {
+            font-size: 16px;
+            color: var(--gray-400);
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+
+        .about-content p:last-of-type { margin-bottom: 0; }
+
+        /* ===== WHY CHOOSE US / STATS ===== */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+        }
+
+        .stat-block {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: var(--radius-lg);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all var(--transition);
+        }
+
+        .stat-block:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-4px);
+        }
+
+        .stat-icon {
+            width: 56px;
+            height: 56px;
+            background: rgba(20, 184, 166, 0.15);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+
+        .stat-icon svg {
+            width: 28px;
+            height: 28px;
+            stroke: var(--accent);
+            fill: none;
+            stroke-width: 1.8;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .stat-number {
+            font-size: 40px;
+            font-weight: 800;
+            color: var(--white);
+            margin-bottom: 6px;
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.6);
+            font-weight: 500;
+        }
+
+        /* ===== TRUST SIGNALS ===== */
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            border-radius: var(--radius);
+            padding: 24px;
+            transition: all var(--transition);
+        }
+
+        .trust-badge:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+
+        .trust-badge-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: rgba(20, 184, 166, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .trust-badge-icon svg {
+            width: 24px;
+            height: 24px;
+            stroke: var(--teal-deep);
+            fill: none;
+            stroke-width: 1.8;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .trust-badge h4 {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--charcoal);
+        }
+
+        /* ===== CTA BANNER ===== */
+        .cta-banner {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--teal-deep) 0%, var(--teal-mid) 60%, var(--teal-light) 100%);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-banner::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 70% 30%, rgba(20,184,166,0.15) 0%, transparent 60%);
+        }
+
+        .cta-banner .container { position: relative; z-index: 2; }
+
+        .cta-banner h2 {
+            font-size: clamp(30px, 4vw, 48px);
+            color: var(--white);
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .cta-banner p {
+            font-size: 17px;
+            color: rgba(255, 255, 255, 0.75);
+            max-width: 520px;
+            margin: 0 auto 36px;
+            line-height: 1.7;
+        }
+
+        .btn-light {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--accent);
+            color: var(--white);
+            padding: 16px 36px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 16px;
+            transition: all var(--transition);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-light:hover {
+            background: #17c9b4;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(20, 184, 166, 0.4);
+        }
+
+        .cta-phone {
+            display: block;
+            margin-top: 20px;
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .cta-phone a {
+            color: var(--white);
+            font-weight: 600;
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background: var(--charcoal);
+            padding: 60px 0 32px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .footer-inner {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 48px;
+            margin-bottom: 48px;
+        }
+
+        .footer-brand h3 {
+            color: var(--white);
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        .footer-brand p {
+            font-size: 14px;
+            line-height: 1.7;
+            max-width: 340px;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 16px;
+        }
+
+        .footer-col p,
+        .footer-col a {
+            font-size: 14px;
+            line-height: 2;
+            display: block;
+            transition: color var(--transition);
+        }
+
+        .footer-col a:hover { color: var(--accent); }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 24px;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+            .hero-visual { display: none; }
+            .services-grid { grid-template-columns: repeat(2, 1fr); }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .trust-grid { grid-template-columns: repeat(2, 1fr); }
+            .about-grid { grid-template-columns: 1fr; gap: 40px; }
+            .about-photo { max-width: 400px; }
+            .footer-inner { grid-template-columns: 1fr; gap: 32px; }
+        }
+
+        @media (max-width: 768px) {
+            .header-cta { display: none; }
+            .mobile-toggle { display: block; }
+
+            .hero { padding: 100px 0 60px; min-height: auto; }
+            .hero h1 { font-size: 36px; }
+
+            .section { padding: 64px 0; }
+            .section-header { margin-bottom: 40px; }
+
+            .services-grid { grid-template-columns: 1fr; }
+            .stats-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+            .trust-grid { grid-template-columns: 1fr; }
+
+            .stat-block { padding: 28px 16px; }
+            .stat-number { font-size: 32px; }
+
+            .hero-ctas { flex-direction: column; align-items: flex-start; }
+            .hero-trust { gap: 20px; }
+
+            .cta-banner { padding: 60px 0; }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 30px; }
+            .hero-trust { flex-direction: column; align-items: flex-start; gap: 12px; }
+            .stats-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 0-7 7c0 3 1.5 5.5 3 7.5L12 22l4-5.5c1.5-2 3-4.5 3-7.5a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                </div>
+                <span class="logo-text"><span>Dental Wellness</span> of Charlotte</span>
+            </a>
+            <a href="tel:7043177337" class="header-cta">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                Book Appointment
+            </a>
+            <button class="mobile-toggle" onclick="toggleMenu()" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ===== MOBILE MENU ===== -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#services" onclick="toggleMenu()">Services</a>
+        <a href="#about" onclick="toggleMenu()">About</a>
+        <a href="#why" onclick="toggleMenu()">Why Us</a>
+        <a href="tel:7043177337" class="mobile-menu-cta">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Book Appointment
+        </a>
+    </div>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <p class="hero-accent-line">Charlotte's Premium Dental Care</p>
+                    <h1>A Healthier Smile <br>Starts <span class="teal">Here</span></h1>
+                    <p class="hero-subtitle">Experience modern, comfortable dentistry in a calm, boutique setting. Dr. Sergei Shirman and our team combine advanced technology with a gentle, patient-first approach.</p>
+                    <div class="hero-ctas">
+                        <a href="tel:7043177337" class="btn-primary">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            Book Appointment
+                        </a>
+                        <a href="tel:7043177337" class="btn-outline">Call (704) 317-7337</a>
+                    </div>
+                    <div class="hero-trust">
+                        <div class="hero-trust-item">
+                            <div>
+                                <div class="hero-trust-stars">
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84L18 6.71l-4 3.9.94 5.5L10 13.58 5.06 16.1 6 10.6l-4-3.9 5.61-.87L10 1z"/></svg>
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84L18 6.71l-4 3.9.94 5.5L10 13.58 5.06 16.1 6 10.6l-4-3.9 5.61-.87L10 1z"/></svg>
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84L18 6.71l-4 3.9.94 5.5L10 13.58 5.06 16.1 6 10.6l-4-3.9 5.61-.87L10 1z"/></svg>
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84L18 6.71l-4 3.9.94 5.5L10 13.58 5.06 16.1 6 10.6l-4-3.9 5.61-.87L10 1z"/></svg>
+                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84L18 6.71l-4 3.9.94 5.5L10 13.58 5.06 16.1 6 10.6l-4-3.9 5.61-.87L10 1z"/></svg>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="value">5.0</span>
+                                <span class="label">Stars</span>
+                            </div>
+                        </div>
+                        <div class="hero-trust-item">
+                            <span class="value">380+</span>
+                            <span class="label">Reviews</span>
+                        </div>
+                        <div class="hero-trust-item">
+                            <span class="value">15+</span>
+                            <span class="label">Years</span>
+                        </div>
+                        <div class="hero-trust-item">
+                            <span class="value">Dr. Shirman</span>
+                            <span class="label">DDS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-shape">
+                        <div class="hero-shape-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C9.5 2 7.5 4 7.5 6.5c0 1.5.7 2.8 1.8 3.7-.3.8-.8 2.2-1 3.3-.3 1.5-.3 3 .2 4.5.5 1.5 1.5 2.8 3.5 3.8 2-1 3-2.3 3.5-3.8.5-1.5.5-3 .2-4.5-.2-1.1-.7-2.5-1-3.3 1.1-.9 1.8-2.2 1.8-3.7C16.5 4 14.5 2 12 2z"/></svg>
+                        </div>
+                    </div>
+                    <div class="hero-float-badge top-right">
+                        <div class="badge-icon gold">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="#D4A853"><path d="M10 1l2.39 4.84L18 6.71l-4 3.9.94 5.5L10 13.58 5.06 16.1 6 10.6l-4-3.9 5.61-.87L10 1z"/></svg>
+                        </div>
+                        <div class="badge-text">
+                            <span class="num">5.0</span>
+                            <span class="lbl">Star Rating</span>
+                        </div>
+                    </div>
+                    <div class="hero-float-badge bottom-left">
+                        <div class="badge-icon teal">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#14B8A6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <div class="badge-text">
+                            <span class="num">380+</span>
+                            <span class="lbl">Happy Patients</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="section section-cream" id="services">
+        <div class="container">
+            <div class="section-header">
+                <p class="overline">What We Offer</p>
+                <h2>Comprehensive Dental Services</h2>
+                <p>From routine cleanings to complete smile transformations, we provide a full spectrum of dental care under one roof.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24"><path d="M9 12h6"/><path d="M12 9v6"/><circle cx="12" cy="12" r="10"/></svg>
+                    </div>
+                    <h3>General & Preventive Dentistry</h3>
+                    <p>Routine exams, cleanings, and preventive care to keep your smile healthy and catch issues early.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 3l1.5 4.5H18l-3.5 2.5 1.5 4.5L12 12l-4 2.5 1.5-4.5L6 7.5h4.5z"/></svg>
+                    </div>
+                    <h3>Cosmetic Dentistry & Veneers</h3>
+                    <p>Transform your smile with porcelain veneers, bonding, and personalized cosmetic treatment plans.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2v4"/><path d="M12 18v4"/><path d="M4.93 4.93l2.83 2.83"/><path d="M16.24 16.24l2.83 2.83"/><path d="M2 12h4"/><path d="M18 12h4"/></svg>
+                    </div>
+                    <h3>Dental Implants</h3>
+                    <p>Permanent, natural-looking tooth replacements that restore function and confidence for a lifetime.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
+                    </div>
+                    <h3>Invisalign & Clear Aligners</h3>
+                    <p>Straighten teeth discreetly with custom clear aligners — no metal brackets, no discomfort.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2"/><path d="M12 21v2"/><path d="M4.22 4.22l1.42 1.42"/><path d="M18.36 18.36l1.42 1.42"/><path d="M1 12h2"/><path d="M21 12h2"/><path d="M4.22 19.78l1.42-1.42"/><path d="M18.36 5.64l1.42-1.42"/></svg>
+                    </div>
+                    <h3>Teeth Whitening</h3>
+                    <p>Professional-grade whitening for dramatically brighter results in a single visit or at home.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                    </div>
+                    <h3>Emergency Dental Care</h3>
+                    <p>Urgent toothaches, broken teeth, or dental trauma — fast, compassionate care when you need it most.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT DR. SHIRMAN ===== -->
+    <section class="section section-white" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-photo">
+                    <span class="about-initials">SS</span>
+                </div>
+                <div class="about-content">
+                    <p class="overline">Meet Your Dentist</p>
+                    <h2>Dr. Sergei Shirman, DDS</h2>
+                    <p>With over 15 years of experience, Dr. Shirman founded Dental Wellness of Charlotte on a simple belief: every patient deserves thoughtful, unhurried care in a comfortable environment.</p>
+                    <p>His patient-first philosophy emphasizes listening, education, and shared decision-making. Dr. Shirman combines advanced training in implants, cosmetic dentistry, and digital imaging with a gentle chairside manner that puts even anxious patients at ease.</p>
+                    <p>Through ongoing continuing education and investment in modern techniques and technology, Dr. Shirman ensures every patient receives the highest standard of care available today.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WHY CHOOSE US ===== -->
+    <section class="section section-teal" id="why">
+        <div class="container">
+            <div class="section-header light">
+                <p class="overline" style="color: var(--accent);">Why Patients Choose Us</p>
+                <h2>Trusted by Families Across Charlotte</h2>
+                <p>Our results speak for themselves — exceptional care backed by years of experience and hundreds of happy patients.</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-block">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <div class="stat-number">5.0</div>
+                    <div class="stat-label">Star Rating</div>
+                </div>
+                <div class="stat-block">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <div class="stat-number">380+</div>
+                    <div class="stat-label">Happy Patients</div>
+                </div>
+                <div class="stat-block">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Years of Experience</div>
+                </div>
+                <div class="stat-block">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+                    </div>
+                    <div class="stat-number">Latest</div>
+                    <div class="stat-label">Technology</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TRUST SIGNALS ===== -->
+    <section class="section section-cream" id="trust">
+        <div class="container">
+            <div class="section-header">
+                <p class="overline">Your Confidence, Our Priority</p>
+                <h2>Why You Can Trust Us</h2>
+            </div>
+            <div class="trust-grid">
+                <div class="trust-badge">
+                    <div class="trust-badge-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h4>ADA Member</h4>
+                </div>
+                <div class="trust-badge">
+                    <div class="trust-badge-icon">
+                        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12l2 2 4-4"/></svg>
+                    </div>
+                    <h4>State Licensed</h4>
+                </div>
+                <div class="trust-badge">
+                    <div class="trust-badge-icon">
+                        <svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+                    </div>
+                    <h4>Insurance Accepted</h4>
+                </div>
+                <div class="trust-badge">
+                    <div class="trust-badge-icon">
+                        <svg viewBox="0 0 24 24"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+                    </div>
+                    <h4>Sedation Available</h4>
+                </div>
+                <div class="trust-badge">
+                    <div class="trust-badge-icon">
+                        <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M10 14l2 2 4-4"/></svg>
+                    </div>
+                    <h4>Same-Week Appointments</h4>
+                </div>
+                <div class="trust-badge">
+                    <div class="trust-badge-icon">
+                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <h4>Flexible Hours</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA BANNER ===== -->
+    <section class="cta-banner" id="cta">
+        <div class="container">
+            <h2>Ready for a Smile You Love?</h2>
+            <p>Schedule your visit today and discover why hundreds of Charlotte families trust Dental Wellness for their care.</p>
+            <a href="tel:7043177337" class="btn-light">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                Book Your Appointment
+            </a>
+            <span class="cta-phone">Or call us directly at <a href="tel:7043177337">(704) 317-7337</a></span>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <h3>Dental Wellness of Charlotte</h3>
+                    <p>Providing premium dental care to Charlotte families since 2010. Your comfort, health, and confidence are at the heart of everything we do.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <a href="tel:7043177337">(704) 317-7337</a>
+                    <p>9915 Sandy Rock Pl, Suite 200</p>
+                    <p>Charlotte, NC 28277</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Hours</h4>
+                    <p>Mon — Thu: 8:00 AM – 4:30 PM</p>
+                    <p>Friday: 8:00 AM – 1:30 PM</p>
+                    <p>Sat — Sun: Closed</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Dental Wellness of Charlotte. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script>
+        // Header scroll effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Mobile menu toggle
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            if (menu.style.display === 'block') {
+                menu.classList.remove('active');
+                setTimeout(() => { menu.style.display = 'none'; }, 300);
+            } else {
+                menu.style.display = 'block';
+                requestAnimationFrame(() => menu.classList.add('active'));
+            }
+        }
+    </script>
+</body>
+</html>

@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dental Wellness of Charlotte | Charlotte's Premium Dental Care | (704) 317-7337</title>
-    <meta name="description" content="Dental Wellness of Charlotte provides premium dental care including implants, Invisalign, cosmetic dentistry & more. 5.0 stars, 380+ reviews. Call (704) 317-7337.">
-    <meta name="keywords" content="dentist Charlotte NC, dental implants Charlotte, Invisalign Charlotte, cosmetic dentistry Charlotte, Dental Wellness of Charlotte, Dr. Shirman">
+    <meta name="description" content="Dental Wellness of Charlotte provides premium dental care in Charlotte, NC. Dr. Sergei Shirman, DDS. 5.0 stars, 380+ reviews. General, cosmetic, implants, Invisalign. Call (704) 317-7337.">
+    <meta name="keywords" content="dentist Charlotte NC, dental implants Charlotte, Invisalign Charlotte, cosmetic dentistry Charlotte, teeth whitening Charlotte, Dental Wellness of Charlotte">
     <meta property="og:title" content="Dental Wellness of Charlotte | Charlotte's Premium Dental Care">
-    <meta property="og:description" content="Premium dental care in Charlotte, NC. General, cosmetic, implants, Invisalign & more. 5.0 stars from 380+ reviews. Dr. Sergei Shirman, DDS.">
+    <meta property="og:description" content="Premium dental care in Charlotte, NC. Dr. Sergei Shirman, DDS. 5.0 stars, 380+ reviews. Modern, comfortable dentistry for the whole family.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://dental-wellness-charlotte.vercel.app">
     <meta property="og:locale" content="en_US">
@@ -20,7 +20,6 @@
       "name": "Dental Wellness of Charlotte",
       "url": "https://dental-wellness-charlotte.vercel.app",
       "telephone": "+17043177337",
-      "description": "Charlotte's Premium Dental Care — General, Cosmetic, Implants, Invisalign & more.",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "9915 Sandy Rock Pl, Suite 200",
@@ -43,7 +42,7 @@
         },
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Friday"],
+          "dayOfWeek": "Friday",
           "opens": "08:00",
           "closes": "13:30"
         }
@@ -61,7 +60,6 @@
       "areaServed": "Charlotte, NC"
     }
     </script>
-    <link rel="preconnect" href="https://images.unsplash.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
@@ -70,7 +68,7 @@
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
         :root {
-            --teal-deep: #0D4A52;
+            --deep-teal: #0D4A52;
             --teal-mid: #0E5A63;
             --teal-light: #10707C;
             --accent: #14B8A6;
@@ -82,9 +80,6 @@
             --charcoal: #1C2B2D;
             --gray-400: #94A3B8;
             --gray-200: #E2E8F0;
-            --border: rgba(13, 74, 82, 0.1);
-            --shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
-            --shadow-lg: 0 12px 48px rgba(0, 0, 0, 0.12);
             --radius: 12px;
             --radius-lg: 20px;
             --transition: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
@@ -106,18 +101,10 @@
 
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Plus Jakarta Sans', sans-serif;
-            font-weight: 700;
             line-height: 1.15;
         }
 
-        .display-italic {
-            font-family: 'Cormorant Garamond', Georgia, serif;
-            font-style: italic;
-            font-weight: 400;
-        }
-
         a { color: inherit; text-decoration: none; }
-        img { max-width: 100%; height: auto; display: block; }
 
         .container {
             max-width: 1200px;
@@ -135,13 +122,13 @@
             background: rgba(255, 255, 255, 0.92);
             backdrop-filter: blur(20px) saturate(180%);
             -webkit-backdrop-filter: blur(20px) saturate(180%);
-            border-bottom: 1px solid var(--border);
+            border-bottom: 1px solid var(--gray-200);
             transition: var(--transition);
         }
 
         .header.scrolled {
             background: rgba(255, 255, 255, 0.97);
-            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
         }
 
         .header-inner {
@@ -163,29 +150,29 @@
         .logo-icon {
             width: 38px;
             height: 38px;
-            background: var(--teal-deep);
+            background: var(--deep-teal);
             border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
-        .logo-icon svg { width: 22px; height: 22px; }
+        .logo-icon svg { width: 20px; height: 20px; }
 
         .logo-text {
-            font-weight: 700;
             font-size: 17px;
+            font-weight: 700;
             color: var(--charcoal);
             letter-spacing: -0.01em;
         }
 
-        .logo-text span { color: var(--teal-deep); }
+        .logo-text span { color: var(--accent); }
 
         .header-cta {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background: var(--teal-deep);
+            background: var(--deep-teal);
             color: var(--white);
             padding: 10px 24px;
             border-radius: 50px;
@@ -221,55 +208,6 @@
             border-radius: 2px;
         }
 
-        /* ===== MOBILE MENU ===== */
-        .mobile-menu {
-            display: none;
-            position: fixed;
-            top: 72px;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(255, 255, 255, 0.98);
-            backdrop-filter: blur(20px);
-            z-index: 999;
-            padding: 40px 24px;
-            opacity: 0;
-            transform: translateY(-10px);
-            transition: all 0.4s ease;
-        }
-
-        .mobile-menu.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .mobile-menu a {
-            display: block;
-            font-weight: 600;
-            font-size: 24px;
-            padding: 16px 0;
-            border-bottom: 1px solid var(--gray-200);
-            color: var(--charcoal);
-            transition: color var(--transition);
-        }
-
-        .mobile-menu a:hover { color: var(--accent); }
-
-        .mobile-menu-cta {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            background: var(--teal-deep);
-            color: var(--white);
-            padding: 16px;
-            border-radius: 12px;
-            font-size: 18px;
-            font-weight: 700;
-            margin-top: 32px;
-            text-align: center;
-        }
-
         /* ===== HERO ===== */
         .hero {
             position: relative;
@@ -277,8 +215,8 @@
             display: flex;
             align-items: center;
             padding: 120px 0 80px;
-            overflow: hidden;
             background: var(--cream);
+            overflow: hidden;
         }
 
         .hero-grid {
@@ -290,56 +228,70 @@
             align-items: center;
         }
 
-        .hero-content { position: relative; z-index: 10; }
-
-        .hero-accent-line {
-            font-family: 'Cormorant Garamond', Georgia, serif;
-            font-style: italic;
-            font-size: clamp(20px, 2.5vw, 26px);
-            color: var(--accent);
-            margin-bottom: 12px;
-            font-weight: 400;
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(20, 184, 166, 0.1);
+            border: 1px solid rgba(20, 184, 166, 0.25);
+            color: var(--teal-light);
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            letter-spacing: 0.03em;
         }
 
         .hero h1 {
-            font-size: clamp(40px, 5vw, 62px);
+            font-size: clamp(40px, 5vw, 64px);
+            font-weight: 800;
             color: var(--charcoal);
-            margin-bottom: 20px;
-            letter-spacing: -0.02em;
-            line-height: 1.08;
+            margin-bottom: 8px;
+            letter-spacing: -0.03em;
         }
 
-        .hero h1 .teal { color: var(--teal-deep); }
+        .hero-display-accent {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            font-size: clamp(28px, 3.5vw, 42px);
+            color: var(--deep-teal);
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
 
         .hero-subtitle {
             font-size: 17px;
             color: var(--gray-400);
             max-width: 480px;
-            margin-bottom: 36px;
+            margin-bottom: 32px;
             line-height: 1.7;
         }
 
-        .hero-ctas {
+        .hero-actions {
             display: flex;
-            align-items: center;
             gap: 16px;
             flex-wrap: wrap;
             margin-bottom: 48px;
         }
 
-        .btn-primary {
+        .btn {
             display: inline-flex;
             align-items: center;
-            gap: 8px;
-            background: var(--teal-deep);
-            color: var(--white);
-            padding: 14px 32px;
+            gap: 10px;
+            padding: 16px 32px;
             border-radius: 50px;
             font-weight: 600;
-            font-size: 15px;
+            font-size: 16px;
             transition: all var(--transition);
             border: none;
             cursor: pointer;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        .btn-primary {
+            background: var(--deep-teal);
+            color: var(--white);
         }
 
         .btn-primary:hover {
@@ -349,29 +301,19 @@
         }
 
         .btn-outline {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
             background: transparent;
-            color: var(--teal-deep);
-            padding: 14px 32px;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 15px;
-            border: 2px solid var(--teal-deep);
-            transition: all var(--transition);
-            cursor: pointer;
+            color: var(--deep-teal);
+            border: 2px solid var(--deep-teal);
         }
 
         .btn-outline:hover {
-            background: var(--teal-deep);
+            background: var(--deep-teal);
             color: var(--white);
             transform: translateY(-2px);
         }
 
-        .hero-trust {
+        .hero-trust-row {
             display: flex;
-            align-items: center;
             gap: 32px;
             flex-wrap: wrap;
         }
@@ -382,13 +324,13 @@
             gap: 8px;
         }
 
-        .hero-trust-item .value {
-            font-weight: 800;
+        .hero-trust-value {
             font-size: 18px;
+            font-weight: 800;
             color: var(--charcoal);
         }
 
-        .hero-trust-item .label {
+        .hero-trust-label {
             font-size: 13px;
             color: var(--gray-400);
             font-weight: 500;
@@ -397,12 +339,6 @@
         .hero-trust-stars {
             display: flex;
             gap: 2px;
-        }
-
-        .hero-trust-stars svg {
-            width: 16px;
-            height: 16px;
-            fill: var(--gold);
         }
 
         .hero-visual {
@@ -414,115 +350,61 @@
 
         .hero-shape {
             width: 100%;
-            max-width: 480px;
             aspect-ratio: 1;
-            background: url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&q=80&fit=crop') center/cover no-repeat;
-            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            max-width: 480px;
+            border-radius: var(--radius-lg);
             position: relative;
             overflow: hidden;
+            box-shadow: 0 20px 60px rgba(13, 74, 82, 0.2);
         }
 
-        .hero-shape::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(135deg, rgba(13,74,82,0.25) 0%, rgba(20,184,166,0.15) 100%);
-        }
-
-        .hero-float-badge {
-            position: absolute;
-            background: var(--white);
-            border-radius: 16px;
-            padding: 16px 20px;
-            box-shadow: var(--shadow-lg);
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            animation: floatBadge 4s ease-in-out infinite;
-        }
-
-        .hero-float-badge.top-right {
-            top: 30px;
-            right: -20px;
-        }
-
-        .hero-float-badge.bottom-left {
-            bottom: 40px;
-            left: -20px;
-            animation-delay: -2s;
-        }
-
-        .hero-float-badge .badge-icon {
-            width: 40px;
-            height: 40px;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-        }
-
-        .hero-float-badge .badge-icon.teal { background: rgba(20, 184, 166, 0.12); }
-        .hero-float-badge .badge-icon.gold { background: rgba(212, 168, 83, 0.12); }
-
-        .hero-float-badge .badge-text .num {
-            font-weight: 800;
-            font-size: 18px;
-            color: var(--charcoal);
+        .hero-shape img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
             display: block;
-            line-height: 1.2;
         }
 
-        .hero-float-badge .badge-text .lbl {
-            font-size: 12px;
-            color: var(--gray-400);
-            font-weight: 500;
-        }
-
-        @keyframes floatBadge {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-
-        /* ===== SECTION SHARED ===== */
+        /* ===== SECTION COMMON ===== */
         .section { padding: 100px 0; }
         .section-cream { background: var(--cream); }
-        .section-white { background: var(--white); }
-        .section-teal { background: var(--teal-deep); }
+        .section-teal { background: var(--deep-teal); }
         .section-charcoal { background: var(--charcoal); }
 
-        .section-header {
-            text-align: center;
-            max-width: 640px;
-            margin: 0 auto 60px;
-        }
-
-        .section-header .overline {
-            font-family: 'Cormorant Garamond', Georgia, serif;
-            font-style: italic;
-            font-size: 18px;
+        .section-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
             color: var(--accent);
-            margin-bottom: 8px;
-        }
-
-        .section-header h2 {
-            font-size: clamp(30px, 4vw, 44px);
-            color: var(--charcoal);
             margin-bottom: 16px;
-            letter-spacing: -0.02em;
         }
 
-        .section-header p {
-            font-size: 16px;
+        .section-title {
+            font-size: clamp(32px, 4vw, 48px);
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            margin-bottom: 16px;
+        }
+
+        .section-subtitle {
+            font-size: 17px;
             color: var(--gray-400);
+            max-width: 560px;
             line-height: 1.7;
         }
 
-        .section-header.light h2 { color: var(--white); }
-        .section-header.light p { color: rgba(255,255,255,0.7); }
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header .section-subtitle {
+            margin: 0 auto;
+        }
 
         /* ===== SERVICES ===== */
         .services-grid {
@@ -549,7 +431,7 @@
         }
 
         .service-card-body {
-            padding: 24px 28px 32px;
+            padding: 28px 28px 36px;
         }
 
         .service-card::before {
@@ -559,18 +441,20 @@
             left: 0;
             right: 0;
             height: 3px;
-            background: linear-gradient(90deg, var(--teal-deep), var(--accent));
-            opacity: 0;
-            transition: opacity var(--transition);
+            background: var(--accent);
+            transform: scaleX(0);
+            transition: transform var(--transition);
         }
 
         .service-card:hover {
             transform: translateY(-4px);
-            box-shadow: var(--shadow-lg);
-            border-color: transparent;
+            box-shadow: 0 12px 40px rgba(13, 74, 82, 0.08);
+            border-color: var(--accent);
         }
 
-        .service-card:hover::before { opacity: 1; }
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
 
         .service-icon {
             width: 52px;
@@ -586,15 +470,12 @@
         .service-icon svg {
             width: 26px;
             height: 26px;
-            stroke: var(--teal-deep);
-            fill: none;
-            stroke-width: 1.8;
-            stroke-linecap: round;
-            stroke-linejoin: round;
+            color: var(--deep-teal);
         }
 
         .service-card h3 {
             font-size: 19px;
+            font-weight: 700;
             margin-bottom: 10px;
             color: var(--charcoal);
         }
@@ -602,10 +483,8 @@
         .service-card p {
             font-size: 14px;
             color: var(--gray-400);
-            line-height: 1.65;
+            line-height: 1.6;
         }
-
-        .service-card .service-icon { margin-bottom: 16px; }
 
         /* ===== ABOUT ===== */
         .about-grid {
@@ -618,37 +497,30 @@
         .about-photo {
             width: 100%;
             aspect-ratio: 4/5;
+            background: linear-gradient(135deg, var(--deep-teal) 0%, var(--teal-light) 100%);
             border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
             position: relative;
             overflow: hidden;
         }
 
-        .about-photo img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
+        .about-initials {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 96px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.15);
+            letter-spacing: 0.05em;
         }
 
-        .about-photo::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(to top, rgba(13,74,82,0.2) 0%, transparent 50%);
-            z-index: 1;
-        }
-
-        .about-content .overline {
-            font-family: 'Cormorant Garamond', Georgia, serif;
-            font-style: italic;
-            font-size: 18px;
-            color: var(--accent);
-            margin-bottom: 8px;
-        }
+        .about-content .section-label { color: var(--accent); }
 
         .about-content h2 {
-            font-size: clamp(28px, 3.5vw, 40px);
-            margin-bottom: 20px;
+            font-size: clamp(28px, 3.5vw, 42px);
+            font-weight: 800;
+            color: var(--charcoal);
+            margin-bottom: 24px;
             letter-spacing: -0.02em;
         }
 
@@ -659,61 +531,36 @@
             margin-bottom: 16px;
         }
 
-        .about-content p:last-of-type { margin-bottom: 0; }
+        .about-content p strong {
+            color: var(--charcoal);
+        }
 
-        /* ===== WHY CHOOSE US / STATS ===== */
+        /* ===== WHY CHOOSE US (Stats) ===== */
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 32px;
+            text-align: center;
         }
 
         .stat-block {
-            text-align: center;
             padding: 40px 20px;
-            background: rgba(255, 255, 255, 0.06);
             border-radius: var(--radius-lg);
+            background: rgba(255, 255, 255, 0.06);
             border: 1px solid rgba(255, 255, 255, 0.08);
-            transition: all var(--transition);
-        }
-
-        .stat-block:hover {
-            background: rgba(255, 255, 255, 0.1);
-            transform: translateY(-4px);
-        }
-
-        .stat-icon {
-            width: 56px;
-            height: 56px;
-            background: rgba(20, 184, 166, 0.15);
-            border-radius: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
-        }
-
-        .stat-icon svg {
-            width: 28px;
-            height: 28px;
-            stroke: var(--accent);
-            fill: none;
-            stroke-width: 1.8;
-            stroke-linecap: round;
-            stroke-linejoin: round;
         }
 
         .stat-number {
-            font-size: 40px;
+            font-size: clamp(36px, 4vw, 52px);
             font-weight: 800;
-            color: var(--white);
-            margin-bottom: 6px;
+            color: var(--accent);
             line-height: 1;
+            margin-bottom: 8px;
         }
 
         .stat-label {
-            font-size: 14px;
-            color: rgba(255, 255, 255, 0.6);
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.7);
             font-weight: 500;
         }
 
@@ -737,40 +584,36 @@
 
         .trust-badge:hover {
             transform: translateY(-2px);
-            box-shadow: var(--shadow);
+            box-shadow: 0 8px 30px rgba(13, 74, 82, 0.06);
         }
 
         .trust-badge-icon {
             width: 48px;
             height: 48px;
-            border-radius: 12px;
+            min-width: 48px;
             background: rgba(20, 184, 166, 0.1);
+            border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-shrink: 0;
         }
 
         .trust-badge-icon svg {
             width: 24px;
             height: 24px;
-            stroke: var(--teal-deep);
-            fill: none;
-            stroke-width: 1.8;
-            stroke-linecap: round;
-            stroke-linejoin: round;
+            color: var(--deep-teal);
         }
 
-        .trust-badge h4 {
+        .trust-badge-text {
             font-size: 15px;
-            font-weight: 700;
+            font-weight: 600;
             color: var(--charcoal);
         }
 
         /* ===== CTA BANNER ===== */
         .cta-banner {
             padding: 80px 0;
-            background: url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1400&q=80&fit=crop') center/cover no-repeat;
+            background: linear-gradient(135deg, var(--deep-teal) 0%, var(--teal-light) 100%);
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -780,57 +623,56 @@
             content: '';
             position: absolute;
             inset: 0;
-            background: linear-gradient(135deg, rgba(13,74,82,0.92) 0%, rgba(14,90,99,0.88) 60%, rgba(16,112,124,0.85) 100%);
+            background: radial-gradient(circle at 30% 50%, rgba(20,184,166,0.15) 0%, transparent 60%);
         }
 
         .cta-banner .container { position: relative; z-index: 2; }
 
         .cta-banner h2 {
-            font-size: clamp(30px, 4vw, 48px);
+            font-size: clamp(32px, 4vw, 52px);
+            font-weight: 800;
             color: var(--white);
             margin-bottom: 16px;
-            letter-spacing: -0.02em;
+            letter-spacing: -0.03em;
         }
 
         .cta-banner p {
-            font-size: 17px;
+            font-size: 18px;
             color: rgba(255, 255, 255, 0.75);
             max-width: 520px;
             margin: 0 auto 36px;
             line-height: 1.7;
         }
 
-        .btn-light {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
+        .btn-accent {
             background: var(--accent);
             color: var(--white);
-            padding: 16px 36px;
-            border-radius: 50px;
-            font-weight: 700;
-            font-size: 16px;
-            transition: all var(--transition);
-            border: none;
-            cursor: pointer;
+            padding: 18px 40px;
+            font-size: 17px;
         }
 
-        .btn-light:hover {
-            background: #17c9b4;
+        .btn-accent:hover {
+            background: #12a594;
             transform: translateY(-2px);
-            box-shadow: 0 8px 30px rgba(20, 184, 166, 0.4);
+            box-shadow: 0 8px 30px rgba(20, 184, 166, 0.35);
         }
 
         .cta-phone {
             display: block;
             margin-top: 20px;
-            font-size: 15px;
+            font-size: 16px;
             color: rgba(255, 255, 255, 0.6);
         }
 
         .cta-phone a {
             color: var(--white);
             font-weight: 600;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        .cta-phone a:hover {
+            color: var(--accent);
         }
 
         /* ===== FOOTER ===== */
@@ -840,7 +682,7 @@
             color: rgba(255, 255, 255, 0.6);
         }
 
-        .footer-inner {
+        .footer-grid {
             display: grid;
             grid-template-columns: 2fr 1fr 1fr;
             gap: 48px;
@@ -848,34 +690,39 @@
         }
 
         .footer-brand h3 {
-            color: var(--white);
             font-size: 20px;
+            font-weight: 700;
+            color: var(--white);
             margin-bottom: 12px;
         }
 
         .footer-brand p {
             font-size: 14px;
             line-height: 1.7;
-            max-width: 340px;
+            max-width: 320px;
         }
 
-        .footer-col h4 {
-            color: var(--white);
+        .footer h4 {
             font-size: 14px;
+            font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.08em;
+            color: var(--white);
             margin-bottom: 16px;
         }
 
-        .footer-col p,
-        .footer-col a {
+        .footer-info p {
             font-size: 14px;
             line-height: 2;
-            display: block;
+        }
+
+        .footer-info a {
             transition: color var(--transition);
         }
 
-        .footer-col a:hover { color: var(--accent); }
+        .footer-info a:hover {
+            color: var(--accent);
+        }
 
         .footer-bottom {
             border-top: 1px solid rgba(255, 255, 255, 0.08);
@@ -884,16 +731,12 @@
             font-size: 13px;
         }
 
-        /* ===== RESPONSIVE ===== */
+        /* ===== MOBILE RESPONSIVE ===== */
         @media (max-width: 1024px) {
-            .hero-grid { grid-template-columns: 1fr; gap: 40px; }
-            .hero-visual { display: none; }
             .services-grid { grid-template-columns: repeat(2, 1fr); }
             .stats-grid { grid-template-columns: repeat(2, 1fr); }
             .trust-grid { grid-template-columns: repeat(2, 1fr); }
-            .about-grid { grid-template-columns: 1fr; gap: 40px; }
-            .about-photo { max-width: 400px; }
-            .footer-inner { grid-template-columns: 1fr; gap: 32px; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
         }
 
         @media (max-width: 768px) {
@@ -901,28 +744,86 @@
             .mobile-toggle { display: block; }
 
             .hero { padding: 100px 0 60px; min-height: auto; }
-            .hero h1 { font-size: 36px; }
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .hero-visual { order: -1; }
+            .hero-shape { max-width: 280px; }
+            .hero-trust-row { gap: 20px; }
 
-            .section { padding: 64px 0; }
-            .section-header { margin-bottom: 40px; }
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
 
             .services-grid { grid-template-columns: 1fr; }
-            .stats-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
             .trust-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; gap: 32px; }
 
-            .stat-block { padding: 28px 16px; }
-            .stat-number { font-size: 32px; }
+            .section { padding: 70px 0; }
 
-            .hero-ctas { flex-direction: column; align-items: flex-start; }
-            .hero-trust { gap: 20px; }
+            .hero-actions { flex-direction: column; }
+            .btn { width: 100%; justify-content: center; }
 
-            .cta-banner { padding: 60px 0; }
+            .mobile-menu {
+                display: block;
+                position: fixed;
+                top: 72px;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(255, 255, 255, 0.98);
+                backdrop-filter: blur(20px);
+                z-index: 999;
+                padding: 40px 24px;
+                opacity: 0;
+                pointer-events: none;
+                transform: translateY(-10px);
+                transition: all 0.4s ease;
+            }
+
+            .mobile-menu.active {
+                opacity: 1;
+                pointer-events: all;
+                transform: translateY(0);
+            }
+
+            .mobile-menu a {
+                display: block;
+                font-size: 24px;
+                font-weight: 700;
+                padding: 16px 0;
+                border-bottom: 1px solid var(--gray-200);
+                color: var(--charcoal);
+                transition: color var(--transition);
+            }
+
+            .mobile-menu a:hover { color: var(--accent); }
+
+            .mobile-menu-cta {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                background: var(--deep-teal);
+                color: var(--white);
+                padding: 16px;
+                border-radius: 12px;
+                font-size: 18px;
+                font-weight: 700;
+                margin-top: 32px;
+                text-align: center;
+            }
         }
 
         @media (max-width: 480px) {
-            .hero h1 { font-size: 30px; }
-            .hero-trust { flex-direction: column; align-items: flex-start; gap: 12px; }
-            .stats-grid { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 32px; }
+            .hero-display-accent { font-size: 24px; }
+            .hero-trust-row { flex-direction: column; gap: 12px; }
+            .stats-grid { grid-template-columns: 1fr 1fr; }
+            .stat-block { padding: 28px 16px; }
         }
     </style>
 </head>
@@ -933,95 +834,84 @@
         <div class="header-inner">
             <a href="#" class="logo">
                 <div class="logo-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 0-7 7c0 3 1.5 5.5 3 7.5L12 22l4-5.5c1.5-2 3-4.5 3-7.5a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2C8 2 5 5 5 9c0 3 1.5 5 3 6.5S12 22 12 22s2.5-5.5 4-7S19 12 19 9c0-4-3-7-7-7z"/>
+                        <circle cx="12" cy="9" r="2"/>
+                    </svg>
                 </div>
-                <span class="logo-text"><span>Dental Wellness</span> of Charlotte</span>
+                <div class="logo-text">Dental Wellness <span>of Charlotte</span></div>
             </a>
             <a href="tel:7043177337" class="header-cta">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                 Book Appointment
             </a>
-            <button class="mobile-toggle" onclick="toggleMenu()" aria-label="Toggle menu">
+            <button class="mobile-toggle" onclick="document.querySelector('.mobile-menu').classList.toggle('active')" aria-label="Toggle menu">
                 <span></span><span></span><span></span>
             </button>
         </div>
     </header>
 
     <!-- ===== MOBILE MENU ===== -->
-    <div class="mobile-menu" id="mobileMenu">
-        <a href="#services" onclick="toggleMenu()">Services</a>
-        <a href="#about" onclick="toggleMenu()">About</a>
-        <a href="#why" onclick="toggleMenu()">Why Us</a>
+    <div class="mobile-menu">
+        <a href="#services" onclick="document.querySelector('.mobile-menu').classList.remove('active')">Services</a>
+        <a href="#about" onclick="document.querySelector('.mobile-menu').classList.remove('active')">About</a>
+        <a href="#why-us" onclick="document.querySelector('.mobile-menu').classList.remove('active')">Why Us</a>
         <a href="tel:7043177337" class="mobile-menu-cta">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            Book Appointment
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call (704) 317-7337
         </a>
     </div>
 
     <!-- ===== HERO ===== -->
-    <section class="hero" id="hero">
+    <section class="hero">
         <div class="container">
             <div class="hero-grid">
-                <div class="hero-content">
-                    <p class="hero-accent-line">Charlotte's Premium Dental Care</p>
-                    <h1>A Healthier Smile <br>Starts <span class="teal">Here</span></h1>
-                    <p class="hero-subtitle">Experience modern, comfortable dentistry in a calm, boutique setting. Dr. Sergei Shirman and our team combine advanced technology with a gentle, patient-first approach.</p>
-                    <div class="hero-ctas">
-                        <a href="tel:7043177337" class="btn-primary">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        Charlotte's Premium Dental Care
+                    </div>
+                    <h1>Your Smile Deserves the Best</h1>
+                    <div class="hero-display-accent">Modern comfort meets exceptional care</div>
+                    <p class="hero-subtitle">Experience dentistry reimagined &mdash; where advanced technology, a gentle touch, and a welcoming atmosphere come together for your healthiest, most confident smile.</p>
+                    <div class="hero-actions">
+                        <a href="tel:7043177337" class="btn btn-primary">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                             Book Appointment
                         </a>
-                        <a href="tel:7043177337" class="btn-outline">Call (704) 317-7337</a>
+                        <a href="tel:7043177337" class="btn btn-outline">
+                            Call (704) 317-7337
+                        </a>
                     </div>
-                    <div class="hero-trust">
+                    <div class="hero-trust-row">
                         <div class="hero-trust-item">
-                            <div>
-                                <div class="hero-trust-stars">
-                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84L18 6.71l-4 3.9.94 5.5L10 13.58 5.06 16.1 6 10.6l-4-3.9 5.61-.87L10 1z"/></svg>
-                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84L18 6.71l-4 3.9.94 5.5L10 13.58 5.06 16.1 6 10.6l-4-3.9 5.61-.87L10 1z"/></svg>
-                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84L18 6.71l-4 3.9.94 5.5L10 13.58 5.06 16.1 6 10.6l-4-3.9 5.61-.87L10 1z"/></svg>
-                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84L18 6.71l-4 3.9.94 5.5L10 13.58 5.06 16.1 6 10.6l-4-3.9 5.61-.87L10 1z"/></svg>
-                                    <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84L18 6.71l-4 3.9.94 5.5L10 13.58 5.06 16.1 6 10.6l-4-3.9 5.61-.87L10 1z"/></svg>
-                                </div>
+                            <div class="hero-trust-stars">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A853"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A853"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A853"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A853"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A853"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                             </div>
-                            <div>
-                                <span class="value">5.0</span>
-                                <span class="label">Stars</span>
-                            </div>
+                            <span class="hero-trust-value">5.0</span>
+                            <span class="hero-trust-label">Stars</span>
                         </div>
                         <div class="hero-trust-item">
-                            <span class="value">380+</span>
-                            <span class="label">Reviews</span>
+                            <span class="hero-trust-value">380+</span>
+                            <span class="hero-trust-label">Reviews</span>
                         </div>
                         <div class="hero-trust-item">
-                            <span class="value">15+</span>
-                            <span class="label">Years</span>
+                            <span class="hero-trust-value">15+</span>
+                            <span class="hero-trust-label">Years</span>
                         </div>
                         <div class="hero-trust-item">
-                            <span class="value">Dr. Shirman</span>
-                            <span class="label">DDS</span>
+                            <span class="hero-trust-value">Dr. Shirman</span>
+                            <span class="hero-trust-label">DDS</span>
                         </div>
                     </div>
                 </div>
                 <div class="hero-visual">
-                    <div class="hero-shape" role="img" aria-label="Modern dental office"></div>
-                    <div class="hero-float-badge top-right">
-                        <div class="badge-icon gold">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="#D4A853"><path d="M10 1l2.39 4.84L18 6.71l-4 3.9.94 5.5L10 13.58 5.06 16.1 6 10.6l-4-3.9 5.61-.87L10 1z"/></svg>
-                        </div>
-                        <div class="badge-text">
-                            <span class="num">5.0</span>
-                            <span class="lbl">Star Rating</span>
-                        </div>
-                    </div>
-                    <div class="hero-float-badge bottom-left">
-                        <div class="badge-icon teal">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#14B8A6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                        </div>
-                        <div class="badge-text">
-                            <span class="num">380+</span>
-                            <span class="lbl">Happy Patients</span>
-                        </div>
+                    <div class="hero-shape">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffbb172d4be?w=1600&q=80&fit=crop" alt="Modern dental office at Dental Wellness of Charlotte" loading="eager">
                     </div>
                 </div>
             </div>
@@ -1032,69 +922,72 @@
     <section class="section section-cream" id="services">
         <div class="container">
             <div class="section-header">
-                <p class="overline">What We Offer</p>
-                <h2>Comprehensive Dental Services</h2>
-                <p>From routine cleanings to complete smile transformations, we provide a full spectrum of dental care under one roof.</p>
+                <div class="section-label">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    Our Services
+                </div>
+                <h2 class="section-title">Comprehensive Dental Care</h2>
+                <p class="section-subtitle">From routine cleanings to complete smile makeovers, we offer a full range of dental services tailored to your unique needs.</p>
             </div>
             <div class="services-grid">
                 <div class="service-card">
-                    <img class="service-card-img" src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80&fit=crop" alt="General dentistry examination" loading="lazy">
+                    <img class="service-card-img" src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&q=80&fit=crop" alt="General dentistry exam and cleaning" loading="lazy">
                     <div class="service-card-body">
                         <div class="service-icon">
-                            <svg viewBox="0 0 24 24"><path d="M9 12h6"/><path d="M12 9v6"/><circle cx="12" cy="12" r="10"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                         </div>
-                        <h3>General & Preventive Dentistry</h3>
-                        <p>Routine exams, cleanings, and preventive care to keep your smile healthy and catch issues early.</p>
+                        <h3>General &amp; Preventive Dentistry</h3>
+                        <p>Thorough exams, professional cleanings, and proactive care to keep your smile healthy for life.</p>
                     </div>
                 </div>
                 <div class="service-card">
-                    <img class="service-card-img" src="https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?w=600&q=80&fit=crop" alt="Beautiful smile cosmetic dentistry" loading="lazy">
+                    <img class="service-card-img" src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=600&q=80&fit=crop" alt="Cosmetic dentistry and veneers" loading="lazy">
                     <div class="service-card-body">
                         <div class="service-icon">
-                            <svg viewBox="0 0 24 24"><path d="M12 3l1.5 4.5H18l-3.5 2.5 1.5 4.5L12 12l-4 2.5 1.5-4.5L6 7.5h4.5z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
                         </div>
-                        <h3>Cosmetic Dentistry & Veneers</h3>
-                        <p>Transform your smile with porcelain veneers, bonding, and personalized cosmetic treatment plans.</p>
+                        <h3>Cosmetic Dentistry &amp; Veneers</h3>
+                        <p>Custom veneers, bonding, and aesthetic treatments designed to perfect your smile.</p>
                     </div>
                 </div>
                 <div class="service-card">
-                    <img class="service-card-img" src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=600&q=80&fit=crop" alt="Dental implant procedure" loading="lazy">
+                    <img class="service-card-img" src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&q=80&fit=crop" alt="Dental implant procedure" loading="lazy">
                     <div class="service-card-body">
                         <div class="service-icon">
-                            <svg viewBox="0 0 24 24"><path d="M12 2v4"/><path d="M12 18v4"/><path d="M4.93 4.93l2.83 2.83"/><path d="M16.24 16.24l2.83 2.83"/><path d="M2 12h4"/><path d="M18 12h4"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6m0 4v10M8 8h8M9 18h6"/><circle cx="12" cy="11" r="1"/></svg>
                         </div>
                         <h3>Dental Implants</h3>
-                        <p>Permanent, natural-looking tooth replacements that restore function and confidence for a lifetime.</p>
+                        <p>Permanent, natural-looking tooth replacements that restore both function and confidence.</p>
                     </div>
                 </div>
                 <div class="service-card">
-                    <img class="service-card-img" src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&q=80&fit=crop" alt="Invisalign clear aligners" loading="lazy">
+                    <img class="service-card-img" src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=600&q=80&fit=crop" alt="Invisalign clear aligners" loading="lazy">
                     <div class="service-card-body">
                         <div class="service-icon">
-                            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12c0-4 4.5-8 10-8s10 4 10 8-4.5 8-10 8S2 16 2 12z"/><path d="M8 12h8"/></svg>
                         </div>
-                        <h3>Invisalign & Clear Aligners</h3>
-                        <p>Straighten teeth discreetly with custom clear aligners — no metal brackets, no discomfort.</p>
+                        <h3>Invisalign &amp; Clear Aligners</h3>
+                        <p>Straighten your teeth discreetly with custom clear aligners &mdash; no metal brackets required.</p>
                     </div>
                 </div>
                 <div class="service-card">
-                    <img class="service-card-img" src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=600&q=80&fit=crop" alt="Bright white smile teeth whitening" loading="lazy">
+                    <img class="service-card-img" src="https://images.unsplash.com/photo-1593022356710-0f3e0659b33c?w=600&q=80&fit=crop" alt="Professional teeth whitening" loading="lazy">
                     <div class="service-card-body">
                         <div class="service-icon">
-                            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2"/><path d="M12 21v2"/><path d="M4.22 4.22l1.42 1.42"/><path d="M18.36 18.36l1.42 1.42"/><path d="M1 12h2"/><path d="M21 12h2"/><path d="M4.22 19.78l1.42-1.42"/><path d="M18.36 5.64l1.42-1.42"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
                         </div>
                         <h3>Teeth Whitening</h3>
-                        <p>Professional-grade whitening for dramatically brighter results in a single visit or at home.</p>
+                        <p>Professional-grade whitening treatments for a brighter, more radiant smile in just one visit.</p>
                     </div>
                 </div>
                 <div class="service-card">
-                    <img class="service-card-img" src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=80&fit=crop" alt="Emergency dental care" loading="lazy">
+                    <img class="service-card-img" src="https://images.unsplash.com/photo-1571772996211-2912ac5f8856?w=600&q=80&fit=crop" alt="Emergency dental care" loading="lazy">
                     <div class="service-card-body">
                         <div class="service-icon">
-                            <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
                         </div>
                         <h3>Emergency Dental Care</h3>
-                        <p>Urgent toothaches, broken teeth, or dental trauma — fast, compassionate care when you need it most.</p>
+                        <p>Prompt relief when you need it most &mdash; same-day appointments available for urgent dental issues.</p>
                     </div>
                 </div>
             </div>
@@ -1102,59 +995,52 @@
     </section>
 
     <!-- ===== ABOUT DR. SHIRMAN ===== -->
-    <section class="section section-white" id="about">
+    <section class="section" id="about">
         <div class="container">
             <div class="about-grid">
                 <div class="about-photo">
-                    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=80&fit=crop" alt="Dr. Sergei Shirman, DDS — Dental Wellness of Charlotte" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=80&fit=crop" alt="Dr. Sergei Shirman, DDS" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
                 </div>
                 <div class="about-content">
-                    <p class="overline">Meet Your Dentist</p>
+                    <div class="section-label">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        Meet Your Dentist
+                    </div>
                     <h2>Dr. Sergei Shirman, DDS</h2>
-                    <p>With over 15 years of experience, Dr. Shirman founded Dental Wellness of Charlotte on a simple belief: every patient deserves thoughtful, unhurried care in a comfortable environment.</p>
-                    <p>His patient-first philosophy emphasizes listening, education, and shared decision-making. Dr. Shirman combines advanced training in implants, cosmetic dentistry, and digital imaging with a gentle chairside manner that puts even anxious patients at ease.</p>
-                    <p>Through ongoing continuing education and investment in modern techniques and technology, Dr. Shirman ensures every patient receives the highest standard of care available today.</p>
+                    <p><strong>With over 15 years of experience</strong>, Dr. Shirman has built Dental Wellness of Charlotte on a simple philosophy: every patient deserves personalized, compassionate care in a comfortable environment.</p>
+                    <p>Committed to staying at the forefront of modern dentistry, Dr. Shirman pursues advanced training in implantology, cosmetic procedures, and digital diagnostics. His patient-first approach means listening carefully, explaining thoroughly, and delivering exceptional results.</p>
+                    <p>From the moment you walk through our doors, you'll feel the difference that genuine care and clinical excellence make.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ===== WHY CHOOSE US ===== -->
-    <section class="section section-teal" id="why">
+    <section class="section section-teal" id="why-us">
         <div class="container">
-            <div class="section-header light">
-                <p class="overline" style="color: var(--accent);">Why Patients Choose Us</p>
-                <h2>Trusted by Families Across Charlotte</h2>
-                <p>Our results speak for themselves — exceptional care backed by years of experience and hundreds of happy patients.</p>
+            <div class="section-header">
+                <div class="section-label" style="color: var(--accent);">Why Choose Us</div>
+                <h2 class="section-title" style="color: var(--white);">Trusted by Charlotte Families</h2>
+                <p class="section-subtitle" style="color: rgba(255,255,255,0.65);">Our commitment to excellence is reflected in every smile we create.</p>
             </div>
             <div class="stats-grid">
                 <div class="stat-block">
-                    <div class="stat-icon">
-                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                    </div>
                     <div class="stat-number">5.0</div>
                     <div class="stat-label">Star Rating</div>
                 </div>
                 <div class="stat-block">
-                    <div class="stat-icon">
-                        <svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                    </div>
                     <div class="stat-number">380+</div>
                     <div class="stat-label">Happy Patients</div>
                 </div>
                 <div class="stat-block">
-                    <div class="stat-icon">
-                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                    </div>
                     <div class="stat-number">15+</div>
-                    <div class="stat-label">Years of Experience</div>
+                    <div class="stat-label">Years Experience</div>
                 </div>
                 <div class="stat-block">
-                    <div class="stat-icon">
-                        <svg viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+                    <div class="stat-number">
+                        <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle;color:var(--accent)"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
                     </div>
-                    <div class="stat-number">Latest</div>
-                    <div class="stat-label">Technology</div>
+                    <div class="stat-label">Latest Technology</div>
                 </div>
             </div>
         </div>
@@ -1164,109 +1050,105 @@
     <section class="section section-cream" id="trust">
         <div class="container">
             <div class="section-header">
-                <p class="overline">Your Confidence, Our Priority</p>
-                <h2>Why You Can Trust Us</h2>
+                <div class="section-label">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    Why Patients Trust Us
+                </div>
+                <h2 class="section-title">Quality You Can Count On</h2>
+                <p class="section-subtitle">We hold ourselves to the highest standards so you can feel confident in every visit.</p>
             </div>
             <div class="trust-grid">
                 <div class="trust-badge">
                     <div class="trust-badge-icon">
-                        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                     </div>
-                    <h4>ADA Member</h4>
+                    <span class="trust-badge-text">ADA Member</span>
                 </div>
                 <div class="trust-badge">
                     <div class="trust-badge-icon">
-                        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12l2 2 4-4"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
                     </div>
-                    <h4>State Licensed</h4>
+                    <span class="trust-badge-text">State Licensed</span>
                 </div>
                 <div class="trust-badge">
                     <div class="trust-badge-icon">
-                        <svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
                     </div>
-                    <h4>Insurance Accepted</h4>
+                    <span class="trust-badge-text">Insurance Accepted</span>
                 </div>
                 <div class="trust-badge">
                     <div class="trust-badge-icon">
-                        <svg viewBox="0 0 24 24"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
                     </div>
-                    <h4>Sedation Available</h4>
+                    <span class="trust-badge-text">Sedation Available</span>
                 </div>
                 <div class="trust-badge">
                     <div class="trust-badge-icon">
-                        <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M10 14l2 2 4-4"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/></svg>
                     </div>
-                    <h4>Same-Week Appointments</h4>
+                    <span class="trust-badge-text">Same-Week Appointments</span>
                 </div>
                 <div class="trust-badge">
                     <div class="trust-badge-icon">
-                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                     </div>
-                    <h4>Flexible Hours</h4>
+                    <span class="trust-badge-text">Flexible Hours</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ===== CTA BANNER ===== -->
-    <section class="cta-banner" id="cta">
+    <section class="cta-banner">
         <div class="container">
             <h2>Ready for a Smile You Love?</h2>
-            <p>Schedule your visit today and discover why hundreds of Charlotte families trust Dental Wellness for their care.</p>
-            <a href="tel:7043177337" class="btn-light">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <p>Schedule your visit today and experience the difference that personalized, modern dental care can make.</p>
+            <a href="tel:7043177337" class="btn btn-accent">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                 Book Your Appointment
             </a>
-            <span class="cta-phone">Or call us directly at <a href="tel:7043177337">(704) 317-7337</a></span>
+            <span class="cta-phone">or call us directly at <a href="tel:7043177337">(704) 317-7337</a></span>
         </div>
     </section>
 
     <!-- ===== FOOTER ===== -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-inner">
+            <div class="footer-grid">
                 <div class="footer-brand">
                     <h3>Dental Wellness of Charlotte</h3>
-                    <p>Providing premium dental care to Charlotte families since 2010. Your comfort, health, and confidence are at the heart of everything we do.</p>
+                    <p>Providing Charlotte families with premium dental care in a warm, modern environment since 2010. Your smile is our passion.</p>
                 </div>
-                <div class="footer-col">
+                <div class="footer-info">
                     <h4>Contact</h4>
-                    <a href="tel:7043177337">(704) 317-7337</a>
-                    <p>9915 Sandy Rock Pl, Suite 200</p>
-                    <p>Charlotte, NC 28277</p>
+                    <p>
+                        9915 Sandy Rock Pl, Suite 200<br>
+                        Charlotte, NC 28277<br>
+                        <a href="tel:7043177337">(704) 317-7337</a>
+                    </p>
                 </div>
-                <div class="footer-col">
+                <div class="footer-info">
                     <h4>Hours</h4>
-                    <p>Mon — Thu: 8:00 AM – 4:30 PM</p>
-                    <p>Friday: 8:00 AM – 1:30 PM</p>
-                    <p>Sat — Sun: Closed</p>
+                    <p>
+                        Mon &ndash; Thu: 8:00 AM &ndash; 4:30 PM<br>
+                        Friday: 8:00 AM &ndash; 1:30 PM<br>
+                        Sat &ndash; Sun: Closed
+                    </p>
                 </div>
             </div>
             <div class="footer-bottom">
-                &copy; 2026 Dental Wellness of Charlotte. All rights reserved.
+                &copy; 2025 Dental Wellness of Charlotte. All rights reserved.
             </div>
         </div>
     </footer>
 
-    <!-- ===== SCRIPTS ===== -->
+    <!-- ===== SCROLL HEADER EFFECT ===== -->
     <script>
-        // Header scroll effect
         const header = document.getElementById('header');
         window.addEventListener('scroll', () => {
-            header.classList.toggle('scrolled', window.scrollY > 50);
+            header.classList.toggle('scrolled', window.scrollY > 40);
         });
-
-        // Mobile menu toggle
-        function toggleMenu() {
-            const menu = document.getElementById('mobileMenu');
-            if (menu.style.display === 'block') {
-                menu.classList.remove('active');
-                setTimeout(() => { menu.style.display = 'none'; }, 300);
-            } else {
-                menu.style.display = 'block';
-                requestAnimationFrame(() => menu.classList.add('active'));
-            }
-        }
     </script>
+
 </body>
 </html>

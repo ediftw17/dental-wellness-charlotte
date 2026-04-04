@@ -817,7 +817,7 @@
                 display: block;
                 position: absolute;
                 inset: 0;
-                background: linear-gradient(to top, rgba(13,74,82,1) 0%, rgba(13,74,82,0.98) 25%, rgba(13,74,82,0.85) 45%, rgba(13,74,82,0.5) 60%, rgba(13,74,82,0.15) 75%, rgba(13,74,82,0) 88%, transparent 100%);
+                background: linear-gradient(to top, rgba(13,74,82,1) 0%, rgba(13,74,82,1) 20%, rgba(13,74,82,0.65) 32%, transparent 42%);
                 z-index: 0;
                 pointer-events: none;
             }
@@ -825,23 +825,38 @@
             .hero-text {
                 position: relative;
                 z-index: 1;
-                padding: 1rem 1.25rem calc(env(safe-area-inset-bottom, 2rem) + 2rem);
+                padding: 1.5rem 1.25rem calc(env(safe-area-inset-bottom, 2rem) + 2rem);
                 text-align: center;
+                background: rgba(13,74,82,0.4);
+                backdrop-filter: blur(18px) saturate(150%);
+                -webkit-backdrop-filter: blur(18px) saturate(150%);
+                border-top: 1px solid rgba(255,255,255,0.18);
+                border-radius: 24px 24px 0 0;
+                transform: translate3d(0,0,0);
             }
             .hero-badge {
                 margin-bottom: 12px; padding: 6px 12px; font-size: 12px;
                 background: rgba(255,255,255,0.15); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
                 border: 1px solid rgba(255,255,255,0.3); color: #fff; transform: translate3d(0,0,0);
             }
-            .hero h1 { font-size: clamp(1.6rem, 6vw, 2rem); margin-bottom: 4px; color: #fff; }
-            .hero-display-accent { font-size: clamp(20px, 5vw, 28px); margin-bottom: 12px; color: rgba(255,255,255,0.9); }
-            .hero-subtitle { font-size: 15px; margin-bottom: 20px; line-height: 1.5; color: rgba(255,255,255,0.8); }
-            .hero-actions { margin-bottom: 28px; gap: 10px; }
+            .hero h1 { font-size: clamp(1.15rem, 5vw, 1.6rem); margin-bottom: 4px; color: #fff; }
+            .hero-display-accent { font-size: clamp(18px, 4.5vw, 24px); margin-bottom: 12px; color: rgba(255,255,255,0.9); }
+            .hero-subtitle { font-size: 14px; margin-bottom: 20px; line-height: 1.5; color: rgba(255,255,255,0.8); }
+            .hero-actions { margin-bottom: 20px; gap: 10px; }
             .btn { padding: 14px 24px; font-size: 15px; }
-            .hero-trust-row { gap: 16px; }
-            .hero-trust-item { gap: 8px; }
-            .hero-trust-value { font-size: 16px; color: #fff; }
-            .hero-trust-label { font-size: 13px; color: rgba(255,255,255,0.7); }
+            .hero-trust-row { gap: 10px; }
+            .hero-trust-item {
+                gap: 4px;
+                background: rgba(255,255,255,0.12);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                border: 1px solid rgba(255,255,255,0.2);
+                border-radius: 12px;
+                padding: 8px 14px;
+                transform: translate3d(0,0,0);
+            }
+            .hero-trust-value { font-size: 15px; color: #fff; }
+            .hero-trust-label { font-size: 12px; color: rgba(255,255,255,0.7); }
             .hero-trust-stars svg { fill: #D4A853; }
 
             .about-grid {

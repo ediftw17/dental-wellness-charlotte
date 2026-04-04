@@ -11,7 +11,9 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://dental-wellness-charlotte.vercel.app">
     <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://dental-wellness-charlotte.vercel.app/og.jpg">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://dental-wellness-charlotte.vercel.app/og.jpg">
     <link rel="canonical" href="https://dental-wellness-charlotte.vercel.app">
     <script type="application/ld+json">
     {
@@ -78,7 +80,7 @@
             --white: #FFFFFF;
             --gold: #D4A853;
             --charcoal: #1C2B2D;
-            --gray-400: #94A3B8;
+            --gray-400: #64748B;
             --gray-200: #E2E8F0;
             --radius: 12px;
             --radius-lg: 20px;
@@ -760,6 +762,7 @@
             .services-grid { grid-template-columns: 1fr; }
             .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
             .trust-grid { grid-template-columns: 1fr; }
+            .testimonials-grid { grid-template-columns: 1fr !important; }
             .footer-grid { grid-template-columns: 1fr; gap: 32px; }
 
             .section { padding: 70px 0; }
@@ -1021,7 +1024,7 @@
             <div class="section-header">
                 <div class="section-label" style="color: var(--accent);">Why Choose Us</div>
                 <h2 class="section-title" style="color: var(--white);">Trusted by Charlotte Families</h2>
-                <p class="section-subtitle" style="color: rgba(255,255,255,0.65);">Our commitment to excellence is reflected in every smile we create.</p>
+                <p class="section-subtitle" style="color: rgba(255,255,255,0.85);">Our commitment to excellence is reflected in every smile we create.</p>
             </div>
             <div class="stats-grid">
                 <div class="stat-block">
@@ -1030,17 +1033,67 @@
                 </div>
                 <div class="stat-block">
                     <div class="stat-number">380+</div>
-                    <div class="stat-label">Happy Patients</div>
+                    <div class="stat-label">Five-Star Reviews</div>
                 </div>
                 <div class="stat-block">
                     <div class="stat-number">15+</div>
                     <div class="stat-label">Years Experience</div>
                 </div>
                 <div class="stat-block">
-                    <div class="stat-number">
-                        <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle;color:var(--accent)"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    <div class="stat-number" style="font-size: clamp(28px, 3vw, 40px); letter-spacing: 0.04em;">CEREC</div>
+                    <div class="stat-label">Same-Day Crowns</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="section section-cream">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    Patient Reviews
+                </div>
+                <h2 class="section-title">What Our Patients Say</h2>
+                <p class="section-subtitle">Real experiences from the families we're proud to serve.</p>
+            </div>
+            <div class="testimonials-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+                <div style="background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 36px; position: relative;">
+                    <div style="display: flex; gap: 2px; margin-bottom: 16px;">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A853"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A853"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A853"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A853"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A853"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                     </div>
-                    <div class="stat-label">Latest Technology</div>
+                    <p style="font-size: 15px; color: var(--charcoal); line-height: 1.7; margin-bottom: 20px; font-style: italic;">&ldquo;Dr. Shirman and his team made me feel completely at ease. I used to dread dental visits, but now I actually look forward to them. Best dental experience I&rsquo;ve ever had.&rdquo;</p>
+                    <div style="font-size: 14px; font-weight: 700; color: var(--charcoal);">Sarah M.</div>
+                    <div style="font-size: 13px; color: var(--gray-400);">Patient since 2019</div>
+                </div>
+                <div style="background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 36px; position: relative;">
+                    <div style="display: flex; gap: 2px; margin-bottom: 16px;">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A853"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A853"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A853"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A853"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A853"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p style="font-size: 15px; color: var(--charcoal); line-height: 1.7; margin-bottom: 20px; font-style: italic;">&ldquo;Got a same-day crown with their CEREC technology and it was seamless. The whole office is modern, clean, and the staff genuinely cares. Highly recommend to anyone in Charlotte.&rdquo;</p>
+                    <div style="font-size: 14px; font-weight: 700; color: var(--charcoal);">James T.</div>
+                    <div style="font-size: 13px; color: var(--gray-400);">Patient since 2021</div>
+                </div>
+                <div style="background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 36px; position: relative;">
+                    <div style="display: flex; gap: 2px; margin-bottom: 16px;">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A853"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A853"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A853"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A853"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A853"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p style="font-size: 15px; color: var(--charcoal); line-height: 1.7; margin-bottom: 20px; font-style: italic;">&ldquo;Our whole family goes here, including our two kids. They&rsquo;re so patient and gentle. The office runs on time and the front desk team is always friendly and helpful.&rdquo;</p>
+                    <div style="font-size: 14px; font-weight: 700; color: var(--charcoal);">Michelle &amp; David R.</div>
+                    <div style="font-size: 13px; color: var(--gray-400);">Patients since 2018</div>
                 </div>
             </div>
         </div>
@@ -1092,7 +1145,7 @@
                     <div class="trust-badge-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                     </div>
-                    <span class="trust-badge-text">Flexible Hours</span>
+                    <span class="trust-badge-text">Accepting New Patients</span>
                 </div>
             </div>
         </div>
@@ -1112,7 +1165,7 @@
     </section>
 
     <!-- ===== FOOTER ===== -->
-    <footer class="footer">
+    <footer class="footer" id="contact">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
@@ -1137,7 +1190,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                &copy; 2025 Dental Wellness of Charlotte. All rights reserved.
+                &copy; 2026 Dental Wellness of Charlotte. All rights reserved.
             </div>
         </div>
     </footer>

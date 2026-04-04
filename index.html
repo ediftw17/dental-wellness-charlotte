@@ -745,14 +745,21 @@
             .header-cta { display: none; }
             .mobile-toggle { display: block; }
 
-            .hero { padding: 100px 0 60px; min-height: auto; }
+            .hero { padding: 80px 0 32px; min-height: auto; }
             .hero-grid {
                 grid-template-columns: 1fr;
-                gap: 40px;
+                gap: 16px;
             }
-            .hero-visual { order: -1; }
-            .hero-shape { max-width: 280px; }
-            .hero-trust-row { gap: 20px; }
+            .hero-visual { display: none; }
+            .hero-badge { margin-bottom: 12px; padding: 6px 12px; font-size: 12px; }
+            .hero h1 { font-size: clamp(28px, 7vw, 36px); margin-bottom: 4px; }
+            .hero-display-accent { font-size: clamp(20px, 5vw, 28px); margin-bottom: 12px; }
+            .hero-subtitle { font-size: 15px; margin-bottom: 20px; line-height: 1.5; }
+            .hero-actions { margin-bottom: 28px; gap: 10px; }
+            .btn { padding: 14px 24px; font-size: 15px; }
+            .hero-trust-row { gap: 16px; }
+            .hero-trust-value { font-size: 16px; }
+            .hero-trust-label { font-size: 13px; }
 
             .about-grid {
                 grid-template-columns: 1fr;
@@ -822,9 +829,16 @@
         }
 
         @media (max-width: 480px) {
-            .hero h1 { font-size: 32px; }
-            .hero-display-accent { font-size: 24px; }
-            .hero-trust-row { flex-direction: column; gap: 12px; }
+            .hero { padding: 76px 0 28px; }
+            .hero h1 { font-size: 28px; }
+            .hero-display-accent { font-size: 20px; margin-bottom: 8px; }
+            .hero-subtitle { font-size: 14px; margin-bottom: 16px; }
+            .hero-actions { margin-bottom: 20px; gap: 8px; }
+            .btn { padding: 12px 20px; font-size: 14px; }
+            .hero-trust-row { flex-direction: row; flex-wrap: wrap; gap: 12px; }
+            .hero-trust-item { gap: 4px; }
+            .hero-trust-value { font-size: 14px; }
+            .hero-trust-label { font-size: 12px; }
             .stats-grid { grid-template-columns: 1fr 1fr; }
             .stat-block { padding: 28px 16px; }
         }

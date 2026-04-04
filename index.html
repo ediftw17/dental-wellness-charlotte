@@ -236,15 +236,17 @@
             color: var(--charcoal);
             margin-bottom: 8px;
             letter-spacing: -0.03em;
+            text-wrap: balance;
         }
 
         .hero-display-accent {
             font-family: 'Cormorant Garamond', serif;
             font-style: italic;
-            font-size: clamp(22px, 2.4vw, 28px);
+            font-size: clamp(28px, 3.5vw, 42px);
             color: var(--deep-teal);
             margin-bottom: 20px;
             font-weight: 400;
+            text-wrap: balance;
         }
 
         .hero-subtitle {
@@ -817,7 +819,7 @@
                 display: block;
                 position: absolute;
                 inset: 0;
-                background: linear-gradient(to top, rgba(13,74,82,1) 0%, rgba(13,74,82,1) 20%, rgba(13,74,82,0.65) 32%, transparent 42%);
+                background: linear-gradient(to top, rgba(13,74,82,1) 0%, rgba(13,74,82,0.97) 28%, rgba(13,74,82,0.75) 42%, rgba(13,74,82,0.35) 54%, rgba(13,74,82,0.08) 66%, transparent 76%);
                 z-index: 0;
                 pointer-events: none;
             }
@@ -827,12 +829,6 @@
                 z-index: 1;
                 padding: 1.5rem 1.25rem calc(env(safe-area-inset-bottom, 2rem) + 2rem);
                 text-align: center;
-                background: rgba(13,74,82,0.4);
-                backdrop-filter: blur(18px) saturate(150%);
-                -webkit-backdrop-filter: blur(18px) saturate(150%);
-                border-top: 1px solid rgba(255,255,255,0.18);
-                border-radius: 24px 24px 0 0;
-                transform: translate3d(0,0,0);
             }
             .hero-badge {
                 margin-bottom: 12px; padding: 6px 12px; font-size: 12px;
@@ -845,16 +841,7 @@
             .hero-actions { margin-bottom: 20px; gap: 10px; }
             .btn { padding: 14px 24px; font-size: 15px; }
             .hero-trust-row { gap: 10px; }
-            .hero-trust-item {
-                gap: 4px;
-                background: rgba(255,255,255,0.12);
-                backdrop-filter: blur(10px);
-                -webkit-backdrop-filter: blur(10px);
-                border: 1px solid rgba(255,255,255,0.2);
-                border-radius: 12px;
-                padding: 8px 14px;
-                transform: translate3d(0,0,0);
-            }
+            .hero-trust-item { gap: 4px; }
             .hero-trust-value { font-size: 15px; color: #fff; }
             .hero-trust-label { font-size: 12px; color: rgba(255,255,255,0.7); }
             .hero-trust-stars svg { fill: #D4A853; }

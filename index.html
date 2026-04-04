@@ -121,11 +121,12 @@
             left: 0;
             right: 0;
             z-index: 1000;
-            background: rgba(255, 255, 255, 0.92);
+            background: rgba(255, 255, 255, 0.7);
             backdrop-filter: blur(20px) saturate(180%);
             -webkit-backdrop-filter: blur(20px) saturate(180%);
-            border-bottom: 1px solid var(--gray-200);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.4);
             transition: var(--transition);
+            transform: translate3d(0,0,0);
         }
 
         .header.scrolled {
@@ -400,13 +401,17 @@
         }
 
         .service-card {
-            background: var(--white);
-            border: 1px solid var(--gray-200);
-            border-radius: var(--radius-lg);
+            background: rgba(255, 255, 255, 0.55);
+            backdrop-filter: blur(12px) saturate(180%);
+            -webkit-backdrop-filter: blur(12px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            border-radius: 16px;
             padding: 0;
             transition: all var(--transition);
             position: relative;
             overflow: hidden;
+            box-shadow: 0 4px 24px rgba(13, 74, 82, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+            transform: translate3d(0,0,0);
         }
 
         .service-card-img {
@@ -433,8 +438,8 @@
         }
 
         .service-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 40px rgba(13, 74, 82, 0.08);
+            transform: translate3d(0,-4px,0);
+            box-shadow: 0 12px 40px rgba(13, 74, 82, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.6);
             border-color: var(--accent);
         }
 
@@ -500,6 +505,17 @@
             letter-spacing: 0.05em;
         }
 
+        .about-content {
+            background: rgba(255, 255, 255, 0.55);
+            backdrop-filter: blur(12px) saturate(180%);
+            -webkit-backdrop-filter: blur(12px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 4px 24px rgba(13, 74, 82, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+            transform: translate3d(0,0,0);
+        }
+
         .about-content .section-label { color: var(--accent); }
 
         .about-content h2 {
@@ -531,9 +547,13 @@
 
         .stat-block {
             padding: 40px 20px;
-            border-radius: var(--radius-lg);
-            background: rgba(255, 255, 255, 0.06);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px) saturate(180%);
+            -webkit-backdrop-filter: blur(12px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            box-shadow: 0 4px 24px rgba(13, 74, 82, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+            transform: translate3d(0,0,0);
         }
 
         .stat-number {
@@ -561,16 +581,20 @@
             display: flex;
             align-items: center;
             gap: 16px;
-            background: var(--white);
-            border: 1px solid var(--gray-200);
-            border-radius: var(--radius);
+            background: rgba(255, 255, 255, 0.55);
+            backdrop-filter: blur(12px) saturate(180%);
+            -webkit-backdrop-filter: blur(12px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            border-radius: 16px;
             padding: 24px;
             transition: all var(--transition);
+            box-shadow: 0 4px 24px rgba(13, 74, 82, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+            transform: translate3d(0,0,0);
         }
 
         .trust-badge:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 30px rgba(13, 74, 82, 0.06);
+            transform: translate3d(0,-2px,0);
+            box-shadow: 0 8px 30px rgba(13, 74, 82, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.6);
         }
 
         .trust-badge-icon {
@@ -671,15 +695,19 @@
         }
 
         .btn-accent {
-            background: var(--accent);
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
             color: var(--white);
             padding: 18px 40px;
             font-size: 17px;
+            transform: translate3d(0,0,0);
         }
 
         .btn-accent:hover {
-            background: #12a594;
-            transform: translateY(-2px);
+            background: rgba(255, 255, 255, 0.25);
+            transform: translate3d(0,-2px,0);
             box-shadow: 0 8px 30px rgba(20, 184, 166, 0.35);
         }
 
@@ -801,9 +829,10 @@
             }
             .hero-badge {
                 margin-bottom: 12px; padding: 6px 12px; font-size: 12px;
-                background: transparent; border-color: rgba(255,255,255,0.5); color: #fff;
+                background: rgba(255,255,255,0.15); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+                border: 1px solid rgba(255,255,255,0.3); color: #fff; transform: translate3d(0,0,0);
             }
-            .hero h1 { font-size: clamp(28px, 7vw, 36px); margin-bottom: 4px; color: #fff; }
+            .hero h1 { font-size: clamp(1.6rem, 6vw, 2rem); margin-bottom: 4px; color: #fff; }
             .hero-display-accent { font-size: clamp(20px, 5vw, 28px); margin-bottom: 12px; color: rgba(255,255,255,0.9); }
             .hero-subtitle { font-size: 15px; margin-bottom: 20px; line-height: 1.5; color: rgba(255,255,255,0.8); }
             .hero-actions { margin-bottom: 28px; gap: 10px; }
@@ -827,13 +856,13 @@
 
             .section { padding: 70px 0; }
 
-            .hero-actions { flex-direction: column; }
-            .btn { width: 100%; justify-content: center; }
+            .hero-actions { flex-direction: column; align-items: flex-start; }
+            .btn { padding: 0.85rem 2rem; justify-content: center; }
 
         }
 
         @media (max-width: 480px) {
-            .hero h1 { font-size: 28px; }
+            .hero h1 { font-size: clamp(1.6rem, 6vw, 2rem); }
             .hero-display-accent { font-size: 20px; margin-bottom: 8px; }
             .hero-subtitle { font-size: 14px; margin-bottom: 16px; }
             .hero-actions { margin-bottom: 20px; gap: 8px; }
@@ -1065,7 +1094,7 @@
                 <p class="section-subtitle">Real experiences from the families we're proud to serve.</p>
             </div>
             <div class="testimonials-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
-                <div style="background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 36px; position: relative;">
+                <div style="background: rgba(255,255,255,0.55); backdrop-filter: blur(12px) saturate(180%); -webkit-backdrop-filter: blur(12px) saturate(180%); border: 1px solid rgba(255,255,255,0.35); border-radius: 16px; padding: 36px; position: relative; box-shadow: 0 4px 24px rgba(13,74,82,0.08), inset 0 1px 0 rgba(255,255,255,0.6); transform: translate3d(0,0,0);">
                     <div style="display: flex; gap: 2px; margin-bottom: 16px;">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A853"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A853"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
@@ -1077,7 +1106,7 @@
                     <div style="font-size: 14px; font-weight: 700; color: var(--charcoal);">Sarah M.</div>
                     <div style="font-size: 13px; color: var(--gray-400);">Patient since 2019</div>
                 </div>
-                <div style="background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 36px; position: relative;">
+                <div style="background: rgba(255,255,255,0.55); backdrop-filter: blur(12px) saturate(180%); -webkit-backdrop-filter: blur(12px) saturate(180%); border: 1px solid rgba(255,255,255,0.35); border-radius: 16px; padding: 36px; position: relative; box-shadow: 0 4px 24px rgba(13,74,82,0.08), inset 0 1px 0 rgba(255,255,255,0.6); transform: translate3d(0,0,0);">
                     <div style="display: flex; gap: 2px; margin-bottom: 16px;">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A853"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A853"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
@@ -1089,7 +1118,7 @@
                     <div style="font-size: 14px; font-weight: 700; color: var(--charcoal);">James T.</div>
                     <div style="font-size: 13px; color: var(--gray-400);">Patient since 2021</div>
                 </div>
-                <div style="background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 36px; position: relative;">
+                <div style="background: rgba(255,255,255,0.55); backdrop-filter: blur(12px) saturate(180%); -webkit-backdrop-filter: blur(12px) saturate(180%); border: 1px solid rgba(255,255,255,0.35); border-radius: 16px; padding: 36px; position: relative; box-shadow: 0 4px 24px rgba(13,74,82,0.08), inset 0 1px 0 rgba(255,255,255,0.6); transform: translate3d(0,0,0);">
                     <div style="display: flex; gap: 2px; margin-bottom: 16px;">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A853"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A853"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>

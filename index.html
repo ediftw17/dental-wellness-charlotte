@@ -777,6 +777,8 @@
                 justify-content: flex-end;
                 position: relative;
                 min-height: 100svh;
+                height: 100svh;
+                box-sizing: border-box;
                 background-image: url(./welcome.jpg);
                 background-size: cover;
                 background-position: center top;
@@ -787,7 +789,7 @@
                 display: block;
                 position: absolute;
                 inset: 0;
-                background: linear-gradient(to top, rgba(13,74,82,0.98) 0%, rgba(13,74,82,0.97) 30%, rgba(13,74,82,0.85) 50%, rgba(13,74,82,0.2) 65%, transparent 75%);
+                background: linear-gradient(to top, rgba(13,74,82,1) 0%, rgba(13,74,82,0.98) 25%, rgba(13,74,82,0.85) 45%, rgba(13,74,82,0.5) 60%, rgba(13,74,82,0.15) 75%, rgba(13,74,82,0) 88%, transparent 100%);
                 z-index: 0;
                 pointer-events: none;
             }
@@ -795,7 +797,7 @@
             .hero-text {
                 position: relative;
                 z-index: 1;
-                padding: 1rem 1.25rem 2.5rem;
+                padding: 1rem 1.25rem calc(env(safe-area-inset-bottom, 2rem) + 2rem);
             }
             .hero-badge {
                 margin-bottom: 12px; padding: 6px 12px; font-size: 12px;

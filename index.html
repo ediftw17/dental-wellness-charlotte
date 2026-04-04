@@ -612,6 +612,46 @@
             color: var(--charcoal);
         }
 
+        /* ===== ANCHOR POSITIONING TOOLTIPS ===== */
+        @supports (anchor-name: --test) {
+            .trust-badge-1 { anchor-name: --badge-1; }
+            .trust-badge-2 { anchor-name: --badge-2; }
+            .trust-badge-3 { anchor-name: --badge-3; }
+            .trust-badge-4 { anchor-name: --badge-4; }
+            .trust-badge-5 { anchor-name: --badge-5; }
+            .trust-badge-6 { anchor-name: --badge-6; }
+
+            .badge-tooltip {
+                position: absolute;
+                opacity: 0;
+                pointer-events: none;
+                transition: opacity 0.2s;
+                position-area: top;
+                background: #fff;
+                border-left: 3px solid var(--teal-light);
+                border-radius: 6px;
+                box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+                padding: 10px 14px;
+                max-width: 220px;
+                font-size: 12px;
+                line-height: 1.5;
+                color: var(--charcoal);
+                z-index: 100;
+            }
+
+            .badge-tooltip-1 { position-anchor: --badge-1; }
+            .badge-tooltip-2 { position-anchor: --badge-2; }
+            .badge-tooltip-3 { position-anchor: --badge-3; }
+            .badge-tooltip-4 { position-anchor: --badge-4; }
+            .badge-tooltip-5 { position-anchor: --badge-5; }
+            .badge-tooltip-6 { position-anchor: --badge-6; }
+
+            .trust-badge:hover + .badge-tooltip {
+                opacity: 1;
+                pointer-events: auto;
+            }
+        }
+
         /* ===== CTA BANNER ===== */
         .cta-banner {
             padding: 80px 0;
@@ -1125,42 +1165,48 @@
                 <p class="section-subtitle">We hold ourselves to the highest standards so you can feel confident in every visit.</p>
             </div>
             <div class="trust-grid">
-                <div class="trust-badge">
+                <div class="trust-badge trust-badge-1">
                     <div class="trust-badge-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                     </div>
                     <span class="trust-badge-text">ADA Member</span>
                 </div>
-                <div class="trust-badge">
+                <div class="badge-tooltip badge-tooltip-1">Active member of the American Dental Association since 2010. Held to the highest standards of dental ethics and continuing education.</div>
+                <div class="trust-badge trust-badge-2">
                     <div class="trust-badge-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
                     </div>
                     <span class="trust-badge-text">State Licensed</span>
                 </div>
-                <div class="trust-badge">
+                <div class="badge-tooltip badge-tooltip-2">NC State Board of Dental Examiners — License #NC-28277. Fully licensed and in good standing.</div>
+                <div class="trust-badge trust-badge-3">
                     <div class="trust-badge-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
                     </div>
                     <span class="trust-badge-text">Insurance Accepted</span>
                 </div>
-                <div class="trust-badge">
+                <div class="badge-tooltip badge-tooltip-3">In-network with Delta Dental, Aetna, Cigna, BlueCross BlueShield, and most major PPOs. Call us to verify your specific plan.</div>
+                <div class="trust-badge trust-badge-4">
                     <div class="trust-badge-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
                     </div>
                     <span class="trust-badge-text">Sedation Available</span>
                 </div>
-                <div class="trust-badge">
+                <div class="badge-tooltip badge-tooltip-4">Nitrous oxide and oral sedation available for anxious patients. Safe, comfortable, fully monitored.</div>
+                <div class="trust-badge trust-badge-5">
                     <div class="trust-badge-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/></svg>
                     </div>
                     <span class="trust-badge-text">Same-Week Appointments</span>
                 </div>
-                <div class="trust-badge">
+                <div class="badge-tooltip badge-tooltip-5">New patients and urgent cases seen within 5 business days. Emergency slots available same-day.</div>
+                <div class="trust-badge trust-badge-6">
                     <div class="trust-badge-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                     </div>
                     <span class="trust-badge-text">Accepting New Patients</span>
                 </div>
+                <div class="badge-tooltip badge-tooltip-6">Currently welcoming new patients of all ages. No referral needed.</div>
             </div>
         </div>
     </section>
